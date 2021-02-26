@@ -21,15 +21,12 @@ async def on_member_leave(member):
     
 @bot.command()
 async def ping(ctx):
-    await ctx.send("pong")
+    await ctx.send(f"ping ---> {round(bot.latency * 1000)} ms")
    
 @bot.command()
 async def test(ctx):
     await ctx.send("test")
     
-#aaaaa
-#aaaaaa
 
-
-bot.run(os.getenv("BOTTOKEN"))
-#bot.run("ODEzOTk5MjE5NDI0NjI0NjQw.YDXd2Q.wmCHUz2btIRESPvtIdW3a6Z2IC8")
+#bot.run(os.getenv("BOTTOKEN"))
+bot.run("ODEzOTk5MjE5NDI0NjI0NjQw.YDXd2Q.wmCHUz2btIRESPvtIdW3a6Z2IC8")
