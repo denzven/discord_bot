@@ -28,6 +28,8 @@ async def test(ctx):
     await ctx.send("test")
     
 #aaaaa
+#aaaaaa
+
 
 bot.run(os.getenv("BOTTOKEN"))
 #bot.run("ODEzOTk5MjE5NDI0NjI0NjQw.YDXd2Q.wmCHUz2btIRESPvtIdW3a6Z2IC8")
