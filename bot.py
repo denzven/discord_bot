@@ -4,6 +4,7 @@ from discord.ext import commands
 import os
 
 
+
 bot = commands.Bot(command_prefix="+")
 
 @bot.event
@@ -17,11 +18,16 @@ async def on_member_join(member):
 @bot.event
 async def on_member_leave(member):
     print(f"{member} has left a server")
-
     
 @bot.command()
+async def ping(ctx):
+    await ctx.send("pong")
+   
+@bot.command()
 async def test(ctx):
-    await ctx.send("Test")
+    await ctx.send("test")
+    
+#aaaaa
 
-#bot.run(os.getenv("BOTTOKEN"))
-bot.run("ODEzOTk5MjE5NDI0NjI0NjQw.YDXd2Q.wmCHUz2btIRESPvtIdW3a6Z2IC8")
+bot.run(os.getenv("BOTTOKEN"))
+#bot.run("ODEzOTk5MjE5NDI0NjI0NjQw.YDXd2Q.wmCHUz2btIRESPvtIdW3a6Z2IC8")
