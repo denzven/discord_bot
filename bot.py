@@ -51,5 +51,3 @@ async def _8ball(ctx,*,question):
     await ctx.send(f"question :{question} \nAnswer: {random.choice(responses)}")
 
 #bot.run(os.getenv("BOTTOKEN"))
-bot.run("ODEzOTk5MjE5NDI0NjI0NjQw.YDXd2Q.wmCHUz2btIRESPvtIdW3a6Z2IC8")
-#,,,,
